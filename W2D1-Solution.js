@@ -35,7 +35,11 @@ function findMax(arr) {
 // Write a function that will swap the first and last values of any given array. The default minimum length of the array is 2. (e.g. [1,5,10,-2] will become [-2,5,10,1]).
 
 function swap(arr) {
-    // Your code here
+    var arrnew = arr.slice();
+    var temp = arrnew[0];
+    arrnew[0] = arrnew[arrnew.length-1];
+    arrnew[arrnew.length-1] = temp;
 
     return arrnew;
 }
+swap([1,2,5,6])
